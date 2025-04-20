@@ -1,0 +1,93 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 16px;
+    
+}
+.card{
+    width: 350px;
+    height: 450px;
+    background:linear-gradient(to bottom right, #8b0000, #ff8c00);
+    background-size: cover;
+    border-radius: 12px;
+    padding: 16px;
+    margin: 10px;
+
+}
+
+.name {
+    color: white;
+    font-size: 30px;
+    position: absolute;
+    rotate: -90deg;
+    margin-right: 250px;
+    width: 200px;
+    text-align: center;
+    
+}
+.esfera{
+width: 30px;
+align-items: center;
+position: absolute;
+
+}
+
+.logo{
+    width: 350px;
+    position: absolute;
+    z-index: 1;
+
+
+}
+.card_main{
+    width: 320px;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    z-index: 2;
+}
+.card_img{
+    transition: transform 0.5s ease;
+
+}
+.imagen{
+    width: 220px;
+    max-height: 300px;
+    object-fit: contain;
+    transition: transform 0.3s ease-in-out;
+
+}
+.imagen:hover {
+    transform: scale(1.1); 
+}
+.detalle{
+    position: absolute;
+    margin-left: 190px;
+    margin-bottom: 100px;
+    z-index: 3;
+    opacity: 0;
+    transform: translateX(30px);
+    transition: all 0.5s ease-in-out;
+    pointer-events: none;
+}
+.card_main:hover .card_img {
+    transform: translateX(-50px) scale(1.1);
+}
+.card_main:hover .detalle {
+    opacity: 1;
+    transform: translateX(0);
+    pointer-events: auto;
+}
+.detalle1{
+    background: black;
+    width: 159px;
+    margin: 5px;
+    border-top-left-radius : 10px;
+    border-bottom-left-radius : 10px;
+    color: white;
+    text-align: right;
+}

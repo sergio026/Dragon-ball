@@ -1,0 +1,79 @@
+.container_details{
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+}
+.items{
+    position: absolute;
+    inset: 0 0 0 0;
+}
+.planet{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.Personaje_P{
+    position: absolute;
+    width: 70%;
+    height: 70%;
+    object-fit: contain;
+    z-index: 1;
+    margin-left: 45%;
+    margin-top: 30px;
+}
+.content{
+    position: absolute;
+    top: 20%;
+    width: 1140px;
+    max-width: 80%;
+    left: 50%;
+    transform: translateX(-50%);
+    padding-right: 25%;
+    box-sizing: border-box;
+    color: #FFF;
+    text-shadow: 0 5px 10px #0004;
+
+}
+.nameid,.affiliationid{
+    font-weight: bold;
+    font-size: 5em;
+    line-height: 1.3em;
+
+}
+.affiliationid{
+    color: #f1683a;
+}
+.carousel_container{
+    position: absolute;
+    left: 50%;
+    display: grid;
+    place-items: center;
+    perspective: 1500px;
+    margin: 500px 0 0 350px;
+}
+.carousel{
+    transform-style: preserve-3d;
+    animation: rotateCarousel 20s linear infinite;
+    position:relative;
+    
+}
+.carousel_img{
+    width: 100%;
+}
+.carousel img{
+    position: absolute;
+    width: 40px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: transform 0.5s;
+}
+@keyframes rotateCarousel{
+    from{
+        transform: rotateY(0deg);
+    }
+    to{
+        transform: rotateY(-360deg);
+    }
+}

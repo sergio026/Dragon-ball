@@ -50,7 +50,7 @@
     display: grid;
     place-items: center;
     perspective: 1500px;
-    margin: 500px 0 0 350px;
+    margin: 500px 0 0 400px;
 }
 .carousel{
     transform-style: preserve-3d;
@@ -60,11 +60,12 @@
 }
 .carousel_img{
     width: 100%;
+    background-color: #0004;
 }
 .carousel img{
     position: absolute;
-    width: 40px;
-    height: 80px;
+    width: 60px;
+    height: 100px;
     object-fit: cover;
     border-radius: 10px;
     transition: transform 0.5s;

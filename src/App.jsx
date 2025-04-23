@@ -7,6 +7,7 @@ import HomePage from './Pages/HomePage/HomePage';
 import DetailsPage from './Pages/DetailsPage/DetailsPage'
 import ErrorPage from './Pages/ErrorPage/ErrorPage'
 import FilterPage from './Pages/FilterPage/FilterPage'
+import ImformationPerson from './Pages/ImformationPerson/ImformationPerson'
 
 
 
@@ -16,13 +17,15 @@ const App=()=> {
   
   return (
     <>
-    <Header/>
+    
     <BrowserRouter>
       <NavBar/>
+      <Header/>
       <Routes>
         <Route path='/' element={<HomePage/>}/>
         <Route path='/details/:id' element={<DetailsPage/>}/>
         <Route path='/filter/:gender' element={<FilterPage/>}/>
+        <Route path='/imformation' element={<ImformationPerson/>}/>
         <Route path='*' element={<ErrorPage/>}/>
       </Routes>
     </BrowserRouter>

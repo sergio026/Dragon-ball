@@ -1,9 +1,14 @@
+
 .title{
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
+    background-image: url("https://giffiles.alphacoders.com/139/13998.gif");
+    background-size: cover;
+}
+.textError{
+    margin-top: 400px;
     color: #fff;
-    background-color: #000;
     font-size: 3rem;
 }

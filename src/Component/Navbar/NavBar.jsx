@@ -4,10 +4,12 @@ import './NavBar.css'
 import HomeIcon from '@mui/icons-material/Home';
 import MaleIcon from '@mui/icons-material/Male';
 import FemaleIcon from '@mui/icons-material/Female';
+import ContactsIcon from '@mui/icons-material/Contacts';
 
 const NavBar = () => {
     return (
       <nav className='navbar'>
+        <img src="https://th.bing.com/th/id/OIP.imt3jdvF_UBPMydJckORVgHaCy?rs=1&pid=ImgDetMain" alt="" className='logo_navbar'/>
           <ul className='nav'>            
               <Link to={"/"} className='item'>
               <a className='navcontainer' href="#">
@@ -32,7 +34,15 @@ const NavBar = () => {
                 </span>
                 <span className='text'>Female</span>
               </a>
-              </Link>            
+              </Link>
+              <Link to={"/imformation"} className='item'>
+              <a className ='navcontainer' href="#">
+                <span className='icon'>
+                <ContactsIcon/>
+                </span>
+                <span className='text'>Imformation</span>
+                </a>
+                </Link>            
           </ul>
       </nav>
     )

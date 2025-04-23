@@ -2,10 +2,14 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  
 }
 main{
   padding: 30px;
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
+}
+.main_home{
+  background:linear-gradient(to bottom right, #e9e7e7, #413e3e);
 }

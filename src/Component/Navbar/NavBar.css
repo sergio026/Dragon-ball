@@ -4,21 +4,25 @@
 .navbar{
     width: 100%;
     height: 70px;
-    background: #0004;
+    background: white;
     position: relative;
     display: flex;
-    justify-content: center;
+    justify-content: right;
     align-items: center;
+}
+.logo_navbar{
+    width: 100px;
+    display: flex;
+    margin-right: 65%;
 }
 .nav{
     display: flex;
-    width: 100%;
-    background-color: aqua;
+    width: 300px;
 }
 .item{
     position: relative;
     list-style: none;
-    width: 70px;
+    width: 100%;
     height: 70px;
     z-index: 1;
 }
@@ -38,7 +42,7 @@
     line-height: 75px;
     font-size: 1.5em;
     text-align: center;
-    transition: 03s;
+    transition: 0.3s;
     color:var(--clr); ;
 }
 .item:hover .icon{

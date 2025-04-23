@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 import CardPersonaje from '../../Component/Card/Card_personaje'
+import './HomePage.css'
 
  const HomePage = () => {
     const[arrayObjects,setArrayObjects]=useState([])
@@ -12,7 +13,7 @@ import CardPersonaje from '../../Component/Card/Card_personaje'
     },[]);
 
   return (
-    <main>
+    <main className='main_home'>
         {arrayObjects.map((user)=>(
             <Link to={`/details/${user.id}`} key={user.id} >
                 <CardPersonaje key={user.id} user={user}/>
